@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.root {
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    display: flex;
+    line-height: 1.6;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+  overflow-x: hidden;
+    
+}
+
+.header {
+    width: 100%;
+    max-width: 1600px;
+    padding-top: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    display: block;
+    width: 9.25rem;
+    height: 63px;
+    background-image: url(./img/r/logo.png);
+    margin-left: 47px;
+}
+
+.nav {
+    width: 622px;
+    height: 22px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-right: 202px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav__link {
+    letter-spacing: 2px;
+    vertical-align: top;
+    margin-top: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: rgb(68, 66, 66);
+}
+
+
+
+.intro {
+    
+    
+    width: 100%;
+   height: 1000px;
+    background-image: url(./img/Nina_Cabin_in_the_woods_near_lake_shveden_architecture_evening__3ff05144-a7ef-4960-816c-adc93bb073bc\ 1.png);
+    background-repeat: repeat;
+    background-size: cover;
+
+}
+
+.intro__inner {
+display:flex;
+flex-direction: column;
+position: relative;
+top: 411px;
+padding: 0 47px;
+max-width: 99%;
+font-family: 'Raleway';
+font-weight: 600;
+font-size: 8.125rem;
+line-height: 8.125rem;
+text-transform: uppercase;
+    
+}
+
+.intro__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 8.125rem;
+    line-height: 8.125rem;
+    text-transform: uppercase;
+}
+
+
+.first-line {
+    font-style: italic;
+}
+
+.subtitle {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    padding-top: 71px ;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 150%;
+    text-transform: none;
+   
+}
+
+.subtitle__button {
+    max-width: 100%;
+    height: 49px;
+    align-self: center;
+    text-transform: uppercase;
+    padding-left: 349px;
+    
+}
+
+.button {
+    display: flex;
+    padding: 0.5em 1em;
+    text-decoration: underline;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+  }
+  .component_arrow {
+    margin-left: 30px;
+  }
+
