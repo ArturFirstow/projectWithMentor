@@ -1,0 +1,27 @@
+@media ( max-width: 1400px) {
+    .header__logo{
+        margin: 0 auto;
+    }
+    .nav {
+        padding-top: 50px;
+        padding-left: 50px;
+        line-height: 3;
+    }
+}
+
+@media (max-width: 720px) {
+    .subtitle {
+        left: 0;
+        margin: 0;
+        padding: 20px;
+    }    
+
+}
+
+@media (max-width: 360px) {
+    .intro {
+        max-height: 20%;
+        width: 360px;
+    }
+    
+}
