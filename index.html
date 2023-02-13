@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Raleway:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+
 </head>
+
 <body class="root">
 
 
@@ -19,19 +21,31 @@
         <div class="header__inner">
             <div class="header__logo"></div>
             <nav class="nav">
-                <a class="nav__link" href="#">About</a>
-                <a class="nav__link" href="#">Services</a>
-                <a class="nav__link" href="#">Projects</a>
-                <a class="nav__link" href="#">Gallery</a>
-                <a class="nav__link" href="#">Contacts</a>
+                <a data-goto=".about__wrapper" class="nav__link menu__link" href="#">About</a>
+                <a data-goto=".offer" class="nav__link menu__link" href="#">Services</a>
+                <a data-goto=".projects " class="nav__link menu__link" href="#">Projects</a>
+                <a data-goto=".gallery" class="nav__link menu__link" href="#">Gallery</a>
+                <a data-goto=".contacts" class="nav__link menu__link" href="#">Contacts</a>
             </nav>
         </div>
+     
+
+
+
+
+
    
 </header>
 
 <section class="intro">
  
-    <div class="title"></div>
+    <div class="intro__title">
+        <h1>
+           <span class="h1__1"> We create</span><br>
+           <span class="h1__2">Interiors that one</span><br>
+            <span class="h1__3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wants to live in</span>
+          </h1>
+    </div>
          
               <div class="subtitle">
                 <p class="subtitle__text">For more than 30 years,
@@ -47,10 +61,200 @@
    
 </section>
 
-<section class="about__main">
-    div.
+<section class="about__wrapper menu__link offer">
+
+    <div class="about__title">
+        <h2>About</h2>
+        <div class="about__description"> 
+            <p class="about__description-one">We have created an architectural and design bureau,
+            distinguished by an innovative creative approach in the
+            field of design and the highest level of ethics
+            in the field of business, based on honest and open relationships, 
+            we reach an understanding with the client and partners. We brought
+            together highly qualified professionals dedicated to their work,
+            motivated to succeed in all areas related
+            to the objects of architecture and design.</p>
+            
+            <p class="about__description-two">High standards of quality, creativity of ideas, absolute mastery
+            of the regulatory framework, responsibility for the executed 
+             rojects - all this enables the client to trust us. We are 
+            focused on satisfying the client's design needs, integrating them 
+             into the creative process of architectural design, interior 
+             design and other sections of the project. We are expanding 
+             the range of activities of our architectural company, to 
+             achieve a balance in the system of "ideas and implementation.
+             " Our team consists of architects, designers and engineers
+             from different areas.</p>
+        </div>
+    </div>
+    <div class="about__info">
+        <div class="about__picture">
+            <img src="./img/2.png">
+       </div>
+
+       <div class="about__stats">
+        <div class="about__stats-box">
+            <h3 class="about__stats_box-title">286</h3>
+            <p class="about__stats_box-description">Unique Projects Finished</p>
+        </div>
+        <div class="about__stats-box">
+            <h3 class="about__stats_box-title">139</h3>
+            <p class="about__stats_box-description">Projects<br>
+                in Progress</p>
+        </div>
+        <div class="about__stats-box">
+            <h3 class="about__stats_box-title">16</h3>
+            <p class="about__stats_box-description">Achievements</p>
+        </div>
+        <div class="about__stats-box">
+            <h3 class="about__stats_box-title">13</h3>
+            <p class="about__stats_box-description">Countries that We Operate In</p>
+        </div>
+       </div>
+    </div>
 </section>
 
+<section class="offer menu__link">
+    <h2 class="offer__title">We offer</h2>
+    <hr>
+    <div class="offer__points">DESIGN OF HOUSES</div>
+    <div class="pop-up">
+        <img src="./img/4.png" alt="House Design Image" width="230" height="285">
+        <p>Interior design is the space of your life, its style is your 
+            life beliefs, color scheme - your character, saturation - priorities</p>
+      </div>
+    <hr>
+    <div class="offer__points">INTERIOR DESIGN</div>
+    <hr>
+    <div class="offer__points">DESIGN OF PUBLIC OBJECTS</div>
+    <hr>
+    <div class="offer__points">DESIGN OF PUBLIC INTERIOR</div>
+    <hr>
+</section>
+
+<section class="projects offer menu__link">
+    <div class="project__header">
+        <h2 class="project__title">Projects</h2>
+        <div class="slider-counter">
+           
+            <div class="schetchik">
+                <span class="current-slide">1</span>/<span class="total-slides">6</span>
+            </div>
+            
+            <div class="strelki">
+                <div class=" islider-arrow slider-arrow-left">&larr;</div>
+                <div class="slider-arrow slider-arrow-right">&rarr;</div>
+            </div>
+          
+        </div>
+ 
+    </div>
     
+    <div class="slider">
+        <div class="card">
+          <img src="./img/4.png" alt="Interior 1">
+          <h2 class="card__title">269 HOUSE</h2>
+          <p>interior Design</p>
+        </div>
+        <div class="card">
+          <img src="./img/5.png" alt="Interior 2">
+          <h2 class="card__title">office FOR LEISA team</h2>
+          <p>public objects</p>
+        </div>
+        <div class="card">
+            <img src="./img/5.png" alt="Interior 2">
+            <h2 class="card__title">office FOR LEISA team</h2>
+            <p>public objects</p>
+          </div>
+        <div class="card">
+            <img src="./img/6.png" alt="Interior 3">
+            <h2 class="card__title">nordic HOUSE</h2>
+            <p>public objects</p>
+          </div>
+          <div class="card">
+            <img src="./img/4.png" alt="Interior 1">
+            <h2 class="card__title">269 HOUSE</h2>
+            <p>interior Design</p>
+          </div>
+      
+      </div>  
+
+</section>
+
+<section class="gallery   menu__link">
+    <div class="gallery__description ">
+        <h2 class="gallery__title about__title">Gallery</h2>
+        <p class="gallery__paragraph ">We are constantly growing, learning, and 
+            improving and our partners are steadily increasing. 286 projects 
+            is a sizable number, but we always strive to be better, 
+            more relevant, more determined, and more successful 
+            than yesterday. We are not going to stop.</p>
+            <div class="gallery__button subtitle__button">
+                <label class="button">Explore our work
+                    <img src="./img/r/Component 6.png" alt="arrow" class="component_arrow">
+                </label>
+             </div>
+    </div>
+</section>
+
+<section class="contacts  menu__link">
+    <div class="contacts__block">
+        <h2 class="contacts__title about__title">Contacts</h2>
+        <p class="contacts__description">We are ready to
+             share with you our
+             design vision and lead you into 
+             the exciting world of creativity.</p>
+        <div class="contacts__adress">
+            <div class="contacts__adress-point">
+                <h3 class="contact__adress-title">Adress</h3>
+                <p  class="contact__adress-text">04053, Kyiv, Gogolivska str., 39</p>
+            </div>   
+           <div class="contacts__adress-point">
+                <h3 class="contact__adress-title">email</h3>
+                <p  class="contact__adress-text">brilini.mail.asb@gmail.com</p>
+            </div>
+            <div class="contacts__adress-point">
+                <h3 class="contact__adress-title">phone</h3>
+                <p  class="contact__adress-text">+38 068 365 03 60</p>
+                <p  class="contact__adress-text">+38 066 230 44 12</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contacts-form">
+        <h3>Let’s talk about
+            your project!</h3>
+            <form id="form">
+                <div class="container">
+                    <div class="input-box">
+                        <input type="text" id="name" placeholder="Name" required />
+                        <hr>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="phone" placeholder="Phone" required />
+                        <hr>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="message" placeholder="Massage" required />
+                        <hr>
+                    </div>  
+                </div>
+                <div class="contact__button subtitle__button">
+                    <button type="submit" class="button">Call me back
+                        <img src="./img/r/Component 11.png" alt="arrow" class="component_arrow">
+                    </button>
+                </div>
+            </form>
+        
+
+
+    </div>
+
+
+
+
+</section>
+
+    <script src="./index.js"></script>
 </body>
 </html>
