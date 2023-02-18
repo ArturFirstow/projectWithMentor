@@ -1,40 +1,6 @@
-// const slider = document.querySelector('.slider');
-// const cards = document.querySelectorAll('.card');
 
 
-// for (const card of cards) {
-// card.addEventListener('mouseenter', function() {
-// card.style.marginRight = '200px';
-// card.classList.add('animate');
-// });
-
-// card.addEventListener('mouseleave', function() {
-// card.style.marginRight = '74px';
-// card.classList.remove('animate');
-// });
-// }
-
-
-
-// const offerPoints = document.querySelectorAll('.offer__points');
-
-// offerPoints.forEach(point => {
-//   point.addEventListener('mouseenter', function() {
-//     const popUp = document.querySelector('.pop-up');
-//     if (popUp) {
-//       popUp.style.display = 'block';
-//     }
-//   });
-//   point.addEventListener('mouseleave', function() {
-//     const popUp = document.querySelector('.pop-up');
-//     if (popUp) {
-//       popUp.style.display = 'none';
-//     }
-//   });
-// });
-
-
-//
+//плавный скролл до блоков
 
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if (menuLinks.length > 0) {
@@ -57,6 +23,9 @@ if (menuLinks.length > 0) {
   }
 }
 
+
+//  Валидация формы
+
 const form = document.getElementById("form");
 form.onsubmit = function() {
     const name = document.getElementById("name").value;
@@ -70,17 +39,7 @@ form.onsubmit = function() {
     return false;
   }
 
-//   const slider = document.querySelector(".slider");
-// const cards = document.querySelectorAll(".card");
-// let currentIndex = 0;
-
-// setInterval(function() {
-//     currentIndex++;
-//     if (currentIndex >= cards.length) {
-//         currentIndex = 0;
-//     }
-//     slider.scrollLeft = cards[currentIndex].offsetLeft;
-// }, 3000);
+// стрелки слайдера
 
 const sliderArrowLeft = document.querySelector(".slider-arrow-left");
 const sliderArrowRight = document.querySelector(".slider-arrow-right");
@@ -104,6 +63,8 @@ slider.scrollLeft += card.offsetWidth;
 });
 
 
+// счетик слайдера(не работает)
+
 const currentSlide = document.querySelector(".current-slide");
 const totalSlides = document.querySelector(".total-slides");
 const cards = document.querySelectorAll(".card");
@@ -113,3 +74,22 @@ slider.addEventListener("scroll", function() {
 });
 
 totalSlides.textContent = cards.length;
+
+const toggleThemeButton = document.querySelector("#toggle-theme-button");
+const body = document.querySelector("body");
+
+toggleThemeButton.addEventListener("click", function() {
+  body.classList.toggle("dark-theme");
+});
+
+//всплывающая картинка с описанием
+const offerPoints = document.querySelector('.offer__points');
+const popUp = document.querySelector('.pop-up');
+
+offerPoints.addEventListener('mouseover', () => {
+  popUp.style.display = 'block';
+});
+
+offerPoints.addEventListener('mouseout', () => {
+  popUp.style.display = 'none';
+});
